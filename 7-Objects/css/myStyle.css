@@ -1,0 +1,31 @@
+.row{
+    background-color: #ecf3fa;
+    color:#5e6873 ;
+}
+[type="button"]{
+    border-color: #ff5300;
+    color: #ff5300;
+    background-color: white;
+}
+[type="button"]:hover{
+    background-color: #ff5300;
+    border-color: #ff5300;
+}
+[type="btn-primary"]:active{
+    background-color: #ff5300;
+    border-color: #ff5300;
+}
+input:focus {
+    border-color: #ff5300!important;
+    box-shadow: 1px 1px #ff5300 !important;
+  } 
+option:focus{
+    background-color: #ff5300 !important;
+}
+#part2{
+    display: none;
+}
+#part3{
+    display: none;
+}
+

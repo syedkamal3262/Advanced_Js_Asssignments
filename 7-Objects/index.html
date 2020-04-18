@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubmitForm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <br>
+            <h1>Sign Up</h1>
+              <p id="result">
+                Lorem ipsum dolor sit amet, consectelur adipisicing Tempore nisi vitae conseguatur odio necessilatibus, guisquarn magni lahore excepturi fmpedi, dolorem algue heatae ratione perrerendis.Delectus aut architect° accusamus fiber° recusandae, nesciunt rugil reprehendefill nam, tempora quasi dignissimos adipisa algue ex totam dicta eius isle molestiae guibusdarn tuga dolor? Est error similique unde inventore, maiores tempore soluta lahore facilis recusandae ohcaecali exercilationem ratione esse quia nohis hic distinct°, dehds conseguuntur lahorum eligendi. Rem ilague, cumque maxime dignissimos aspemalur. Voluptalum ad in magnam accusanaim, labodosam itague conseguatur enim dolores tuga! Est tenetur ipsam? Fugiat, al 
+                <div id="afterInput"> </div>
+              </p>
+            <div class="col-lg-8">
+            <form id="myForm">
+            <div class="form-group">
+                <input type="email" class="form-control" id="first_Name" aria-describedby="emailHelp" placeholder="First Name*">
+                <br>
+                <input type="email" class="form-control" id="last_Name" aria-describedby="emailHelp" placeholder="Last Name*">
+                <br>
+                <input type="email" class="form-control" id="email_Address" aria-describedby="emailHelp" placeholder="Email Address*">
+                <br>
+                <input type="email" class="form-control" id="confirm_Email_Address" aria-describedby="emailHelp" placeholder="Confirm Email Address*">
+                <br>
+                <input type="password" class="form-control" id="password" placeholder="Password*">
+                <small id="emailHelp" class="form-text text-muted">
+                    Password must be atleast 4 character
+                </small>
+                <br>
+                <input type="password" class="form-control" id="confirm_password" placeholder=" Confirm Password*">
+                <br>
+                <button type="button" class="btn btn-primary" onclick="showPart2()" id="trg-part2">Continue</button>
+                
+             <div id="part2">
+              <br>
+                    <label for="nearestOffice">Nearest Office*</label>
+                    <select class="form-control" id="nearestOffice"></select>
+                  <br>
+                    <input type="email" class="form-control" id="Address" aria-describedby="emailHelp" placeholder="Address*">
+                    <br>
+                    <input type="email" class="form-control" id="Address_2" aria-describedby="emailHelp" placeholder="Address 2*">
+                    <br>
+                    <input type="email" class="form-control" id="City" aria-describedby="emailHelp" placeholder="City*">
+                    <br>
+   
+                    <label for="relocate">Where will you be relocate to </label>
+                    <select multiple class="form-control" id="relocate"></select>
+                    <br>
+                    <label for="countries">Country</label>
+                    <select multiple class="form-control" id="countries"></select>
+                    <br>
+                    <input type="number" class="form-control" id="Post_code" aria-describedby="emailHelp" placeholder="Post code *">
+                    <br>
+                    <input type="number" class="form-control" id="Phone" aria-describedby="emailHelp" placeholder="Phone*">
+                    <br>
+                    <input type="number" class="form-control" id="Mobile_Phone" aria-describedby="emailHelp" placeholder="Mobile Phone*">
+                    <br>
+                    <button type="button" class="btn btn-info">Back</button>
+                    <button type="button" class="btn btn-primary" onclick="showPart3()">Continue</button>
+            <br>
+               <div id="part3">
+       
+              
+                <label for="sel1">Categories*</label>
+                <select class="form-control" id="categories">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <br>
+                <input type="email" class="form-control" id="Job_Title" aria-describedby="emailHelp" placeholder="Job Title*">    
+                <br>
+                <label for="relocate2">Where will you Locate to</label>
+                <select multiple class="form-control" id="relocate2"></select>
+                <br>
+                <label for="exampleFormControlSelect2">Years of Experience</label>
+                <select multiple class="form-control" id="experience">
+                  <option>20</option>
+                  <option>21</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                </select>
+                <br>
+                <input type="email" class="form-control" id="example_First_Name" aria-describedby="emailHelp" placeholder="First Name*">
+                <br>
+            <label for="companies">Companies Authorized to work in*</label>
+            <select class="form-control" id="companies"></select>
+            <br>
+            <input type="email" class="form-control" id="Website" aria-describedby="emailHelp" placeholder="Website*">
+            <br>
+        <label for="sel1">Ad Age*</label>
+        <select class="form-control" id="age">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <br>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="upload_File">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+          <br><br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="tc_Check">
+            <label class="form-check-label" for="defaultCheck1">
+             I have read the and agree to the <span class="text-warning">Terms and Conditions</span>
+            </label>
+          </div>
+          <br>
+          <br>
+             <button type="button" class="btn btn-danger" onclick="restForm()">Reset</button> 
+            <button type="button" class="btn btn-info">Back</button>
+            <button type="button" class="btn btn-primary" onclick="signUp()">Submit</button>
+            <br>
+            </div>
+          </div>
+         </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</body>
+<script src="./js/data.js"></script>
+<script src="js/login.js"></script>
+<script src="js/signup.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
